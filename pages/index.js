@@ -25,8 +25,6 @@ function Home(props) {
   const [currentPage, setCurrentPage] = useState(1);
   const [paginatedList, setPaginatedList] = useState([]);
 
-  const theme = useSelector((state) => state.theme);
-
   useEffect(() => {
     try {
       const fetchSessions = async () => {
